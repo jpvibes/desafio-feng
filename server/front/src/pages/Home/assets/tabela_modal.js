@@ -2,7 +2,7 @@ import React from "react";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import BootstrapTable from "react-bootstrap-table-next";
 
-const Tabela_modal = props => {
+const TabelaModal = props => {
   const columns = [
     //display colunas da tabela
     {
@@ -33,26 +33,26 @@ const Tabela_modal = props => {
           <h2 className="text-center">Detalhes do Pedido {props.pedidos_id}</h2>
           <br />
           <div className="d-flex justify-content-between">
-            <a>Nome: {props.client_name}</a>
+            <h5>Nome: {props.client_name}</h5>
             <div>
-              <a>Telefone: {props.client_phone}</a>
+              <h5>Telefone: {props.client_phone}</h5>
             </div>
-            <a>Email: {props.client_email}</a>
+            <h5>Email: {props.client_email}</h5>
           </div>
         </div>
         <BootstrapTable //tabela
-          keyField="id"
+          keyField="name"
           columns={columns}
           data={props.data}
         />
         <div className="d-flex justify-content-between">
           <div />
-          <h5 style={{ "margin-right": "2rem" }}>Total: {props.value_total}</h5>
+          <h5 style={{ marginRight: "2rem" }}>Total: {props.value_total}</h5>
         </div>
 
         <div
           className="row justify-content-center align-self-center"
-          style={{ "margin-bottom": "1rem" }}
+          style={{ marginBottom: "1rem" }}
         >
           <button className="btn btn-success " onClick={props.voltar_tabela}>
             Voltar
@@ -63,4 +63,4 @@ const Tabela_modal = props => {
   );
 };
 
-export default Tabela_modal;
+export default TabelaModal;

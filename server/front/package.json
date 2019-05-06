@@ -1,6 +1,7 @@
 {
-  "name": "Desafio_FENG",
+  "name": "DesafioFENG",
   "version": "0.1.0",
+  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
@@ -13,7 +14,8 @@
     "react-dom": "^16.4.2",
     "react-editable-table": "^1.12.32",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^3.0.0",
+    "styled-components": "3.4.10"
   },
   "scripts": {
     "start": "react-scripts start",

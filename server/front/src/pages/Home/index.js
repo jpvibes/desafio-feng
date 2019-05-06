@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import "./assets/style.css";
-import Tabela_Principal from "./assets/tabela_principal";
+import TabelaPrincipal from "./assets/tabela_principal";
 
 //Todas as funcoes referente a tabela estao sendo executadas no script: tabela_principal.js
 
@@ -16,7 +16,7 @@ class Home extends Component {
                 className="row justify-content-center"
                 style={{ marginTop: "5%" }}
               >
-                <Tabela_Principal />
+                <TabelaPrincipal />
               </div>
             </div>
           </div>
